@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="40dp"
+            android:text="LocateMe"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_weight="1"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"/>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:id="@+id/tabs"
+        android:background="@color/background"
+        app:tabIndicatorHeight="0dp"
+        app:tabBackground="@drawable/tabs"
+        android:layout_weight="0.17"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>

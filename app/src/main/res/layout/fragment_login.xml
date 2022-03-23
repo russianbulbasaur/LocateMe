@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/ddes"/>
+<RelativeLayout
+    android:elevation="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edittext_back"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/emailet"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:hint="Email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edittext_back"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"
+                android:hint="Password"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/passet"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="100dp"
+            android:id="@+id/loginbut"
+            app:elevation="40dp"
+            app:backgroundTint="@color/extra_back"
+            android:layout_gravity="center_horizontal"
+            android:text="Login"
+            android:textColor="@color/white"
+            app:cornerRadius="60dp"
+            android:shadowColor="@color/white"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/mylocation"
+    android:icon="@drawable/ic_baseline_location_on_24"
+    android:title="My location">
+
+</item>
+    <item android:title="Location History"
+        android:icon="@drawable/ic_baseline_view_list_24"
+        android:id="@+id/pastlocations"/>
+</menu>
